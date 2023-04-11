@@ -1,0 +1,36 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #003366;
+    color: white;
+  }
+  
+  h1, h3 {
+    text-align: center;
+  }
+  
+  .main_container {
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    height: 100%;
+    width: 400px;
+  }
+  
+  .button_container, .quote_container {
+    margin: 10px;
+  }
+  
+  .quote_container {
+    margin-bottom: 20px;
+  }
+  
+  .quote_container p {
+    font-size: 1.6em;
+  }
+  
+  .quote_container span {
+    margin: 0 5px;
+  }
+
+  .subtitle {
+    visibility: hidden;
+  }
