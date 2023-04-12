@@ -6,10 +6,10 @@ body {
   }
 
   .generate, .answer {
-    font-size: 15px;
+    font-size: 30px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
-    width: 50%;
+    width: 100%;
   }
 
   .time {
@@ -35,14 +35,13 @@ body {
   .button_container {
     position: fixed;
     bottom: 0;
-    width: 90%;
 
     left:0; right:0; margin-left:auto; margin-right:auto;
   }
 
   .select {
-    font-size: 15px;
-    width: 50%;
+    font-size: 30px;
+    width: 100%;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
   }
