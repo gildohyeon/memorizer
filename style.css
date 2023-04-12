@@ -6,12 +6,9 @@ body {
   }
 
   .generate, .answer {
-    margin: 10px;
     font-size: 1.5em;
-    padding: 10px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
-    width: 100%;
   }
 
   .time {
@@ -47,5 +44,4 @@ body {
     width: 50%;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-    padding: 10px;
   }
