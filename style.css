@@ -6,7 +6,7 @@ body {
   }
 
   .generate, .answer {
-    font-size: 2em;
+    font-size: 15px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     width: 50%;
@@ -41,7 +41,7 @@ body {
   }
 
   .select {
-    font-size: 2em;
+    font-size: 15px;
     width: 50%;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
