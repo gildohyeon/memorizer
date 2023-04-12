@@ -35,3 +35,10 @@ body {
   .subtitle {
     visibility: hidden;
   }
+
+  .button_container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+  }
