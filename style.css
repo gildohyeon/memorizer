@@ -10,7 +10,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     background-color: #ffffff54;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -53,4 +53,10 @@ body {
     text-align: center;
     text-align: -webkit-center;
     font-family: 'Noto Sans KR', sans-serif;
+
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
   }
