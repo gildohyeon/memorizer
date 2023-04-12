@@ -1,6 +1,6 @@
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: #003366;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #0051ad;
     color: white;
     text-align: center;
   }
@@ -8,6 +8,10 @@ body {
   .generate, .answer {
     margin: 10px;
     font-size: 1.5em;
+    padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    width: 100%;
   }
 
   .time {
@@ -18,6 +22,7 @@ body {
   .subtitle {
     margin: 10px;
     font-size: 2em;
+    font-weight: 700;
   }
 
   .translation {
@@ -40,5 +45,12 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+  }
 
+  .select {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 10px;
   }

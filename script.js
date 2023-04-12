@@ -1,16 +1,25 @@
 let myjson;
 
-fetch('./1-1.json') 
-.then((response) => response.json()) 
-.then((json) => {
+let episode = 1;
 
-    myjson = json;
-    
-    generate(myjson);
+function read(i) {
 
-})
+    let path = './1-'+episode+'.json';
+
+    fetch(path) 
+    .then((response) => response.json()) 
+    .then((json) => {
+  
+        myjson = json;
+        
+        generate(myjson);
+  
+    })
 
 
+}
+
+read(episode);
 
 function generate(json) {
 
@@ -32,6 +41,7 @@ function generate(json) {
 }
 
 
+
 document.getElementsByClassName("generate")[0].onclick = function () {
     generate(myjson);
   };
@@ -40,3 +50,7 @@ document.getElementsByClassName("answer")[0].onclick = function () {
     document.getElementsByClassName("subtitle")[0].style.visibility = "visible";
   };
 
+document.getElementsByClassName("select")[0].onchange = function () {
+  episode = document.getElementsByClassName("select")[0].value;
+  read(episode);
+};
