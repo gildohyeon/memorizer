@@ -1,25 +1,42 @@
-import json from './1-1.json' assert {type: 'json'};
+let myjson;
+
+fetch('./1-1.json') 
+.then((response) => response.json()) 
+.then((json) => {
+
+    myjson = json;
+    
+    generate(myjson);
+
+})
 
 
 
-const random_count = Math.floor(Math.random() * (json.length-1));
+function generate(json) {
 
-const data = json[random_count];
+  document.getElementsByClassName("subtitle")[0].style.visibility = "hidden";
 
-const time = data.Time;
-const subtitle = data.Subtitle;
-const translation = data.Translation;
+  let random_count = Math.floor(Math.random() * (json.length-1));
+
+  let data = json[random_count];
+
+  let time = data.Time;
+  let subtitle = data.Subtitle;
+  let translation = data.Translation;
 
 
-document.querySelector(".time").textContent = time;
-document.querySelector(".subtitle").textContent = subtitle;
-document.querySelector(".translation").textContent = translation;
+  document.querySelector(".time").textContent = time;
+  document.querySelector(".subtitle").textContent = subtitle;
+  document.querySelector(".translation").textContent = translation;
+
+}
+
 
 document.getElementsByClassName("generate")[0].onclick = function () {
-    location.reload()
+    generate(myjson);
   };
 
-  document.getElementsByClassName("answer")[0].onclick = function () {
+document.getElementsByClassName("answer")[0].onclick = function () {
     document.getElementsByClassName("subtitle")[0].style.visibility = "visible";
   };
 
