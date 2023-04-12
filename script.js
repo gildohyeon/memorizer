@@ -39,6 +39,8 @@ function generate(json) {
   document.querySelector(".subtitle").textContent = subtitle;
   document.querySelector(".translation").textContent = translation;
 
+  document.getElementsByClassName("text")[0].value = "";
+
 }
 
 

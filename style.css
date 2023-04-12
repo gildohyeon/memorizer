@@ -68,9 +68,10 @@ body {
 
   .text {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0px 5px 5px 0px;
     font-size: 1em;
     font-weight: 700;
+    text-align: center;
   }
