@@ -29,13 +29,6 @@ body {
     margin: 10px;
     font-size: 1em;
   }
-  
-  /* .main_container {
-    margin: 30px auto 30px auto;
-    padding: 10px;
-    height: 100%;
-    width: 400px;
-  } */
 
   .subtitle {
     visibility: hidden;
@@ -44,12 +37,14 @@ body {
   .button_container {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 90%;
+
+    left:0; right:0; margin-left:auto; margin-right:auto;
   }
 
   .select {
-    font-size: 1.5em;
-    width: 100%;
+    font-size: 1em;
+    width: 50%;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     padding: 10px;

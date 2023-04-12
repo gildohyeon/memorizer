@@ -1,6 +1,6 @@
 let myjson;
 
-let episode = 1;
+let episode = 'ALL';
 
 function read(i) {
 
@@ -20,6 +20,7 @@ function read(i) {
 }
 
 read(episode);
+
 
 function generate(json) {
 
