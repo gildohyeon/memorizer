@@ -57,3 +57,15 @@ document.getElementsByClassName("select")[0].onchange = function () {
   episode = document.getElementsByClassName("select")[0].value;
   read(episode);
 };
+
+document.addEventListener("keyup", function(event) {
+  if (event.code === 'Enter') {
+    if (document.getElementsByClassName("subtitle")[0].style.visibility == "visible") {
+      generate(myjson);
+    }
+    else {
+      document.getElementsByClassName("subtitle")[0].style.visibility = "visible";
+    }
+    
+  }
+});
