@@ -60,12 +60,11 @@ document.getElementsByClassName("select")[0].onchange = function () {
 
 document.addEventListener("keyup", function(event) {
   if (event.code === 'Enter') {
-    if (document.getElementsByClassName("subtitle")[0].style.visibility == "visible") {
-      generate(myjson);
-    }
-    else {
+    if (document.getElementsByClassName("subtitle")[0].style.visibility != "visible") {
       document.getElementsByClassName("subtitle")[0].style.visibility = "visible";
     }
-    
+    else {
+      generate(myjson);
+    }
   }
 });
