@@ -2,6 +2,8 @@ let myjson;
 
 let episode = 'ALL';
 
+let counter = 0;
+
 function read(i) {
 
     let path = './1-'+episode+'.json';
@@ -51,6 +53,8 @@ document.getElementsByClassName("generate")[0].onclick = function () {
 
 document.getElementsByClassName("answer")[0].onclick = function () {
     document.getElementsByClassName("subtitle")[0].style.visibility = "visible";
+    counter++;
+    document.querySelector(".counter").textContent = counter;
   };
 
 document.getElementsByClassName("select")[0].onchange = function () {
@@ -62,6 +66,8 @@ document.addEventListener("keyup", function(event) {
   if (event.code === 'Enter') {
     if (document.getElementsByClassName("subtitle")[0].style.visibility != "visible") {
       document.getElementsByClassName("subtitle")[0].style.visibility = "visible";
+      counter++;
+      document.querySelector(".counter").textContent = counter;
     }
     else {
       generate(myjson);

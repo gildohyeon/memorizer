@@ -98,4 +98,10 @@ body {
     color: rgb(4, 0, 255);
   }
 
+  .counter {
+    margin: 20px 0px 20px 0px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
 
